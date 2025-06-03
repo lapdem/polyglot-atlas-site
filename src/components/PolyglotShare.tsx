@@ -53,9 +53,9 @@ const PolyglotShare: React.FC<PolyglotShareProps> = ({
 
     try {
       await navigator.share(shareData);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
-      console.error("Share failed", err);
-      alert("Sharing failed. Please try again.");
+      
     }
   };
 
