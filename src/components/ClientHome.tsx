@@ -44,7 +44,7 @@ className={`w-full bg-gray-800 text-white px-6 text-6xl font-bold flex items-cen
 
     {/* Icon and Text */}
     <div className="flex flex-col sm:flex-row items-center sm:items-stretch gap-4 w-full px-4 max-w-screen-md mx-auto">
-      <div className="w-full sm:w-1/2 flex justify-center items-center">
+      <div className="w-full sm:w-1/2 flex justify-center items-center [color-scheme:light]">
         <img src="/logo.svg" alt="Logo" className="w-40 h-auto" />
       </div>
       <div className="w-full sm:w-1/2 flex justify-center sm:justify-start items-center">

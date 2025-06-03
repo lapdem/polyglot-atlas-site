@@ -22,6 +22,8 @@ declare global {
 
 const fallbackGray = 'gray'; // fallback if color not found in tailwind map
 
+const svgPrefix = 'data:image/svg+xml,';
+
 function getTailwindColor(name: string, shade: string): string {
   const color = rawColors[name as keyof typeof rawColors];
   if (typeof color === 'object' && shade in color) {
@@ -79,14 +81,16 @@ export default function PolyglotMap({ colors, selectedLanguages }: PolyglotMapPr
 
     const svgString: string = `
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
-        ${polygonsMarkup.join('\n')}
+        <rect width="100%" height="100%" fill="white" />
+        ${polygonsMarkup.join('\n')}        
       </svg>
     `.trim();
 
+    
     const encoded: string = encodeURIComponent(svgString)
       .replace(/'/g, '%27')
       .replace(/"/g, '%22');
-    return `data:image/svg+xml,${encoded}`;
+    return svgPrefix + encoded;
   }, [languagePolygons, selectedLanguages, colors]);
 
   useEffect(() => {
@@ -102,6 +106,15 @@ export default function PolyglotMap({ colors, selectedLanguages }: PolyglotMapPr
     if (!svgDataUri) return;
 
     setPngReady(false);
+    const svgText = decodeURIComponent(svgDataUri.slice(svgPrefix.length));
+
+  // Inject your <text> tag just before </svg>
+  const injectedText = `
+    <text x="80%" y="98%" fill="#374151" font-family="system-ui" font-weight="500" font-size="36">polyglotsatlas.com</text>
+  `;
+
+  const modifiedSvgText = svgText.replace('</svg>', `${injectedText}</svg>`);
+  const modifiedDataUri = `${svgPrefix}${encodeURIComponent(modifiedSvgText)}`;
 
     const width = 1920;
     const height = 1080;
@@ -122,7 +135,7 @@ export default function PolyglotMap({ colors, selectedLanguages }: PolyglotMapPr
       }
     };
 
-    image.src = svgDataUri;
+    image.src = modifiedDataUri;
   }, [svgDataUri]);
 
   if (loading) {
