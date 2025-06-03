@@ -1,5 +1,5 @@
 import { i18nRouter } from 'next-i18n-router';
-import { i18nConfig } from './i18nConfig';
+import { i18nConfig } from '../i18nConfig';
 import { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
@@ -7,5 +7,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|.*\\..*).*)'], // MUST match "/" and all paths
+  matcher: '/((?!api|static|.*\\..*|_next).*)'
 };

@@ -1,0 +1,35 @@
+{
+    "website_title": "The Polyglot's Atlas",
+    "website_description": "Ever wondered how many people you can talk to in their native language? Welcome to The Polyglot's Atlas — your gateway to discovering just that! Simply select the languages you speak below, then scroll to explore a beautifully shareable map showing where those speakers live and what percentage of the world they represent.",
+    "website_by": "A website by",
+    "select_placeholder": "Select the languages you speak",
+    "disclaimer": {
+        "line1": "This website does not collect or store any personal data directly. We use Google Analytics, which may set cookies to collect anonymous usage data.",
+        "line2": "By continuing to use this site, you consent to the use of such cookies. See",
+        "google_privacy_policy": "Google's Privacy Policy",
+        "or_use": "or use the",
+        "opt_out_addon": "opt-out browser add-on"
+    },
+    "labels": {
+        "languages": "Languages",
+        "populations": "Populations",
+        "map": "Map",
+        "sources": "Sources",
+        "people": "People",
+        "countries": "Countries"
+        
+    },
+    "data": {
+        "text1": "You can communicate with an",
+        "text2": "people in",
+        "text3": "countries in (one of) their native language(s). Your top languages are:",
+        "not_selected": "Once you've selected the languages you speak more information will be shown here."
+    },
+    "adjectives": {
+        "good0": "admirable",
+        "good1": "awesome",  
+        "good2": "impressive",   
+        "good3": "amazing",
+        "good4": "incredible"
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512"
+height="512">
+<style>
+    path { stroke: #000; fill: none; }
+    @media (prefers-color-scheme: dark) {
+      path { stroke: #fff; fill: none;}
+    }
+ </style>
+<path stroke-width="20"
+d="M  255 20		a  236 236  0 1  0   2 0 z"/>
+<clipPath id="outer">
+    <circle cx="255" cy="255" r="240" />
+</clipPath>
+<path stroke-width="40" clip-path="url(#outer)"
+d="	M  255 28		A  236 236  0 0 0  28 255
+	M  60  125		A  393 393  0 0 0  187 171
+	M  264 9		A  393 393  0 0 0  184 328
+	
+	M  255 177		A  393 393  0 0 0  452 125
+	M  148 486		A  393 393  0 0 0  412 145
+	M  325 171		A  393 393  0 0 0  454 385
+	M  350 109		A  393 393  0 0 1  366 149
+	"/>
+</svg>
