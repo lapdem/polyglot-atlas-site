@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from 'next/font/google'
 
 import "./globals.css";
@@ -23,6 +24,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-N0EWZ11E8B"></Script>
+        <Script id ="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-N0EWZ11E8B');
+          `}          
+        </Script>
       </head>
       <body
         className={`antialiased ${inter.className}`}
