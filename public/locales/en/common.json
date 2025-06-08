@@ -1,6 +1,13 @@
 {
-    "website_title": "The Polyglot's Atlas",
-    "website_description": "Ever wondered how many people you can talk to in their native language? Welcome to The Polyglot's Atlas — your gateway to discovering just that! Simply select the languages you speak below, then scroll to explore a beautifully shareable map showing where those speakers live and what percentage of the world they represent.",
+    "meta":{
+        "title": "The Polyglot's Atlas - Beautiful Language Maps",
+        "description": "See how many people you can speak to in their native languages. Create and share an interactive world map showing your global language reach.",
+        "image_alt": "A map showing the 10 most spoken languages in the world, created with The Polyglot's Atlas.",
+        "site_name": "The Polyglot's Atlas",
+        "keywords": "languages, map, speak native languages, language speakers map, interactive language map, global language reach, multilingual communication, polyglot tool, shareable language map"
+    },
+    "website_description": "Discover how many people you can communicate with in their native languages. Explore a shareable map of language speakers worldwide.",
+    "website_text": "Ever wondered how many people you can talk to in their native language? Welcome to The Polyglot's Atlas — your gateway to discovering just that! Simply select the languages you speak below, then scroll to explore a beautifully shareable map showing where those speakers live and what percentage of the world they represent.",
     "website_by": "A website by",
     "select_placeholder": "Select the languages you speak",
     "disclaimer": {

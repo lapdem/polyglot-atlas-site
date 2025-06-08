@@ -35,7 +35,7 @@ export default function ClientHome() {
     {/* Header */}
     <header
 className={`w-full bg-gray-800 text-white px-6 text-6xl font-bold flex items-center min-h-[8rem] ${herr_von_muellerhoff.className}`}    >
-      <span className="relative top-[0.5rem]">{t("website_title")}</span>
+      <span className="relative top-[0.5rem]">{t("meta.site_name")}</span>
     </header>
 
     {/* Main content container */}
@@ -49,7 +49,7 @@ className={`w-full bg-gray-800 text-white px-6 text-6xl font-bold flex items-cen
       </div>
       <div className="w-full sm:w-1/2 flex justify-center sm:justify-start items-center">
         <p className="text-gray-700 text-center sm:text-left">
-          {t("website_description")}
+          {t("website_text")}
         </p>
       </div>
     </div>
