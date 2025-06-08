@@ -46,7 +46,7 @@ export async function generateMetadata({
       type: "website",
       images: [
         {
-          url: '/og_image.svg',
+          url: '/og_image.jpg',
           alt: t("meta.image_alt"),
           width: 1200,
           height: 630,
@@ -59,7 +59,7 @@ export async function generateMetadata({
       description: t("meta.description"),
       site: "@lapdem",
       creator: "@lapdem",
-      images: {url: '/og_image.svg', alt: t("meta.image_alt")},
+      images: {url: '/og_image.jpg', alt: t("meta.image_alt")},
     },
   };
 }
